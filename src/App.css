@@ -1,0 +1,78 @@
+* {
+  margin: 0.4%;
+  padding: 0.4%;
+  background-color: rgb(112, 112, 112);
+  font-weight: 650;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+.nav {
+  position: fixed;
+  width: fit-content;
+  left: 2px;
+}
+
+.blogs {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 36em;
+  right: 0;
+  row-gap: 1em;
+  height: 90vh;
+  margin-bottom: 2em;
+}
+
+.blogs::-webkit-scrollbar {
+  width: .4em;
+  background-color: rgb(153, 153, 153);
+}
+
+.blogs::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+}
+
+.blog {
+  border: 1px solid rgb(195, 190, 190);
+  width: 100%;
+  text-align: left;
+  height: fit-content;
+}
+
+button:hover,
+.blog:hover {
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+input {
+  border: 1px solid black;
+  outline: inset 1px white;
+}
+
+textarea::placeholder {
+  font-weight: 100 !important;
+  font-size: 14px;
+  color: white !important;
+  border: 1px solid white !important;
+}
+
+.btn {
+  margin: 4px;
+}
